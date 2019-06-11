@@ -9,7 +9,7 @@ import (
 )
 
 func ConnectDB() *goqu.Database {
-	msDb, err := sql.Open("mysql", "root:17121991@/test_db")
+	msDb, err := sql.Open("mysql", "root:123456@/test_db")
 
 	if err != nil {
 		panic(err.Error())
