@@ -1,4 +1,4 @@
-# es
+# emulation sequences
 
 `mkdir -p ~/go/src/github.com/es/`
 
