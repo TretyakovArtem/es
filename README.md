@@ -1,9 +1,9 @@
 # es
 
-mkdir -p ~/go/src/github.com/es/
+`mkdir -p ~/go/src/github.com/es/`
 
-cd ~/go/src/github.com/es/
-git clone git@github.com:TretyakovArtem/es.git .
+`cd ~/go/src/github.com/es/`
+`git clone git@github.com:TretyakovArtem/es.git .`
 
 
 для создания бд необходимо запустить в терминале команду из корня проекта
