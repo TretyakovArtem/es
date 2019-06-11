@@ -13,3 +13,8 @@ git clone git@github.com:TretyakovArtem/es.git .
 get запрос по `/` сгенерирует 10 000 записей в трех таблицах `oms_orders`
 
 настройка подключения к бд находится в `driver/driver.go`
+
+
+зависимости:
+`github.com/go-sql-driver/mysql`
+`gopkg.in/doug-martin/goqu.v5`
