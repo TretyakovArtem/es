@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	esRepository "esequence/repository/es"
+	esRepository "github.com/es/repository/es"
 
 	goqu "gopkg.in/doug-martin/goqu.v5"
 )
@@ -16,7 +16,7 @@ func (c Controller) GenerateSeq(db *goqu.Database) http.HandlerFunc {
 
 		esRepo := esRepository.EsRepository{}
 
-		esRepo.GenerateSeq(db, book)
+		esRepo.GenerateSeq(db)
 		fmt.Println("done")
 	}
 }

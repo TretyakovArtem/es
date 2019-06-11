@@ -1,11 +1,11 @@
 package main
 
 import (
-	"esequence/controllers"
-	"esequence/driver"
-	"esequence/models"
 	"log"
 	"net/http"
+
+	"github.com/es/controllers"
+	"github.com/es/driver"
 
 	"github.com/gorilla/mux"
 	"github.com/subosito/gotenv"
@@ -22,7 +22,7 @@ func main() {
 	router := mux.NewRouter()
 	controller := controllers.Controller{}
 
-	router.HandleFunc("/", controller.GenerateSeq(db)).Methods("POST")
+	router.HandleFunc("/", controller.GenerateSeq(db)).Methods("GET")
 
 	log.Fatal(http.ListenAndServe(":8000", router))
 }

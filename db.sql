@@ -46,3 +46,5 @@ CREATE TABLE test_db.oms_orders_3 (
 CREATE INDEX oms_orders_1_id_IDX USING BTREE ON test_db.oms_orders_1 (id);
 CREATE INDEX oms_orders_1_id_IDX USING BTREE ON test_db.oms_orders_2 (id);
 CREATE INDEX oms_orders_1_id_IDX USING BTREE ON test_db.oms_orders_3 (id);
+
+INSERT INTO seq VALUES('orders', 0);
